@@ -4,27 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Guess My Number!</title>
   </head>
   <body>
     <header>
-      <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
+      <aside class="floating-4">
+        <h1 class="w3-animate-opacity">Guess the Number!</h1>
+      </aside>
+      <aside class="floating-2">
+        <p class="between w3-animate-opacity">(Between 1 and 20)</p>
+      </aside>
+      <aside class="floating">
+        <button class="btn again w3-animate-opacity">Another Round!</button>
+      </aside>
+      <aside class="floating-3">
+        <div class="number w3-animate-opacity">?</div>
+      </aside>
     </header>
     <main>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
+      <section class="left w3-animate-left">
+        <aside class="floating-2">
+          <input type="number" min="1" max="20" class="guess" />
+        </aside>
+        <aside class="floating-3">
+          <button class="btn check">Check!</button>
+        </aside>
       </section>
       <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
+        <aside class="floating">
+          <p class="message w3-animate-right">Begin...</p>
+        </aside>
+        <aside class="floating-2">
+          <p class="label-score w3-animate-right">
+            💯 Score: <span class="score">20</span>
+          </p>
+        </aside>
+        <aside class="floating-3">
+          <p class="label-highscore w3-animate-right">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </aside>
       </section>
     </main>
     <script src="script.js"></script>
